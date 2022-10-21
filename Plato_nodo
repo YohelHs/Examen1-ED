@@ -1,0 +1,27 @@
+package pila;
+
+public class Plato_Nodo {
+       private int valor;
+    private Plato_Nodo siguiente;
+
+    public void Nodo() {
+        this.valor = 0;
+        this.siguiente = null;
+    }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    public Plato_Nodo getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Plato_Nodo siguiente) {
+        this.siguiente = siguiente;
+    }
+}
