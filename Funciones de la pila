@@ -1,0 +1,47 @@
+package pila;
+
+public class Main {
+
+   
+    public static void main(String[] args) {
+         Pila pila = new Pila();
+        
+        System.out.println("<<-- Ejemplo de Pila -->>\n\n");
+        
+        pila.apilar(1); //agrega un valor a la pila
+        pila.apilar(21);
+        pila.apilar(32);
+        pila.apilar(82);
+        pila.apilar(41);
+        
+        System.out.println("<<-- Pila -->>");
+        pila.listar();
+        System.out.println("\n<<-- Tamaño -->");
+        System.out.println(pila.tamanno());
+        
+        System.out.println("\n<<-- Retirar el elemento del tope de la pila -->>");
+        pila.lavar();
+        pila.listar();
+        System.out.println("Tamaño: " + pila.tamanno());
+        
+        System.out.println("\n<<-- Actualizar el valor del nodo con el valor entre dos nodos -->>");
+        pila.cambiar(21, 41);
+            //Primero se pone el contenedio del nodo que se quiere cambiar y luego el valor nuevo
+        pila.listar();
+        System.out.println("Tamaño: " + pila.tamanno());
+        
+        
+        
+        System.out.println("\n<<-- Consulta si existe el valor-->>");
+        System.out.println(pila.buscar(82));
+        
+        System.out.println("\n<<-- Elimina la pila -->>");
+        pila.lavar();
+        
+        System.out.println("\n<<-- Consulta si la pila esta vacia -->>");
+        System.out.println(pila.vacia());
+        
+        
+    }
+    
+}
