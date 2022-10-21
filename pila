@@ -1,0 +1,39 @@
+package pila;
+
+public class Plato_Obj {
+
+    private int ID_Plato;
+    private String Limpio;
+    private boolean Cubiertos;
+
+    public Plato_Obj(int ID_Plato, String Limpio, boolean Cubiertos){
+        this.ID_Plato = ID_Plato;
+        this.Limpio = Limpio;
+        this.Cubiertos = Cubiertos;
+    }
+
+    public int getID_Plato() {
+        return ID_Plato;
+    }
+
+    public void setID_Plato(int ID_Plato) {
+        this.ID_Plato = ID_Plato;
+    }
+
+    public String getLimpio() {
+        return Limpio;
+    }
+
+    public void setLimpio(String Limpio) {
+        this.Limpio = Limpio;
+    }
+
+    public boolean isCubiertos() {
+        return Cubiertos;
+    }
+
+    public void setCubiertos(boolean Cubiertos) {
+        this.Cubiertos = Cubiertos;
+    }
+    
+}
